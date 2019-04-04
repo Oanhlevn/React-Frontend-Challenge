@@ -12,7 +12,7 @@ class App extends Component {
     let wordsArray = string.split(" ");
     if (wordsArray == null) {
       let wordArray = [];
-      for (let i = 0; i <= string.length; i++) {
+      for (let i = 0; i <= string.length + 1; i++) {
 
         wordArray.push(string.charAt(i));
       }
@@ -23,7 +23,7 @@ class App extends Component {
       let encriptedArray = [];
       for (let i = 0; i < wordsArray.length; i++) {
         let wordArray = [];
-        for (let j = 0; j <= wordsArray[i].length; j++) { wordArray.push(wordsArray[i].charAt(j)) }
+        for (let j = 0; j <= wordsArray[i].length + 1; j++) { wordArray.push(wordsArray[i].charAt(j)) }
         let encriptedWord = wordArray.reverse().join('');
 
         encriptedArray.push(encriptedWord);
